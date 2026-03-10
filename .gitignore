@@ -1,0 +1,15 @@
+# Swift Package Manager
+/.build
+/Packages
+.swiftpm/
+
+# Xcode
+*.xcodeproj/
+xcuserdata/
+DerivedData/
+
+# macOS
+.DS_Store
+
+# Misc
+.netrc
