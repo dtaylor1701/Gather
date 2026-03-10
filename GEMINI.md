@@ -9,13 +9,13 @@
 
 ## Overview
 
-@import("README.md")
+@./README.md
 
 ## Design
 
-@import("Design.md")
+@./Design.md
 
 ## Product
 
-@import("Product.md")
+@./Product.md
 
