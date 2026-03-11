@@ -77,7 +77,7 @@ struct Gather: ParsableCommand {
         print("Generated context at \(finalOutput)")
     }
 
-    private func adjustHeaderLevels(in content: String, by levels: Int) -> String {
+    func adjustHeaderLevels(in content: String, by levels: Int) -> String {
         let prefix = String(repeating: "#", count: levels)
         let lines = content.components(separatedBy: .newlines)
         let adjustedLines = lines.map { line -> String in
@@ -89,7 +89,7 @@ struct Gather: ParsableCommand {
         return adjustedLines.joined(separator: "\n")
     }
 
-    private func analyzeContext(at path: String) -> String {
+    func analyzeContext(at path: String) -> String {
         let fm = FileManager.default
         let rootURL = URL(fileURLWithPath: path)
         var contextInfo = "## Project Context\n\n"
