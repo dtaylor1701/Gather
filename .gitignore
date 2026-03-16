@@ -13,3 +13,4 @@ DerivedData/
 
 # Misc
 .netrc
+build/
